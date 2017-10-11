@@ -183,6 +183,7 @@ class ReactComp extends Component {
     }
     return (
       <FlatList
+        inverted
         ref={(c) => this.list = c}
         style={this.props.style}
         renderItem={this.renderRow.bind(this)}
